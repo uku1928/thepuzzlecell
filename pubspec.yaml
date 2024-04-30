@@ -14,7 +14,7 @@ dependencies:
   clipboard: any
   cupertino_icons: ^1.0.6
   flame: ^1.16.0
-  audioplayers: ^5.2.0
+  audioplayers: ^6.0.0
   flame_splash_screen: ^0.3.0
   fluent_ui: ^4.7.6
   flutter:
@@ -32,7 +32,7 @@ dependencies:
   yaml: ^3.1.2
   quiver: ^3.1.0
   archive: ^3.4.6
-  file_picker: ^6.1.1
+  file_picker: ^8.0.3
   equatable: ^2.0.5
   lua_vm_bindings:
     git:

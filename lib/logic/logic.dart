@@ -226,7 +226,11 @@ Future<void> fixStorage() async {
   }
   if (isDesktop) {
     if (storage.getBool("fullscreen") != null) {
-      await windowManager.setFullScreen(storage.getBool("fullscreen")!);
+        try {
+            await windowManager.setFullScreen(storage.getBool("fullscreen")!);
+        } catch(e) {
+            print(e);
+        }
     }
   }
   if (storage.getStringList("quickplay_options") == null) {
