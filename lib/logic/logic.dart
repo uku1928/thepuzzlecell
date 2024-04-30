@@ -225,9 +225,9 @@ Future<void> fixStorage() async {
     await storage.setInt("update_queue_runs", 20000000);
   }
   if (isDesktop) {
-    if (storage.getBool("fullscreen") != null) {
+    if (storage.getBool("fullscreen") == true) {
         try {
-            await windowManager.setFullScreen(storage.getBool("fullscreen")!);
+            await windowManager.setFullScreen(true);
         } catch(e) {
             print(e);
         }

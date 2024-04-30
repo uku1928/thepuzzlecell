@@ -202,7 +202,7 @@ class _SettingsPageState extends State<SettingsPage> with TickerProviderStateMix
                         'Fullscreen Window',
                         false,
                         (v) {
-                          windowManager.setFullScreen(v);
+                            windowManager.setFullScreen(v).catchError((Object e) => print(e));
                         },
                       ),
                     checkboxSetting(

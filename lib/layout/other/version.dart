@@ -4,9 +4,10 @@ import 'package:fluent_ui/fluent_ui.dart'
 import 'package:the_puzzle_cell/logic/logic.dart';
 import 'package:the_puzzle_cell/utils/ScaleAssist.dart';
 
-String currentVersion = '2.3.1.0 Configurable';
+String currentVersion = '2.3.1.1 Configurable - QuickFix 1';
 
 final List<String> changes = [
+    "QuickFix 1: Made crashes while changing to fullscreen no longer crash the whole game",
   "Reworked how TPC puzzle movements are computed",
   "Fixed VX implementation being bugged and made it more up-to-date",
   "Added Favorite cells",
